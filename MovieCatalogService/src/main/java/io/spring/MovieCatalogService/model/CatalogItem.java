@@ -8,7 +8,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class MovieItems {
+public class CatalogItem {
     String name;
     String description;
     int rating;

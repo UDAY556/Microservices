@@ -1,5 +1,5 @@
 package io.spring.MovieCatalogService.controller;
-import io.spring.MovieCatalogService.model.MovieItems;
+import io.spring.MovieCatalogService.model.CatalogItem;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,8 +12,8 @@ import java.util.List;
 public class MovieCatalogService {
 
     @RequestMapping("/{userId}")
-   public List<MovieItems>  getMovieItems(@PathVariable("userId")  String userId) {
+   public List<CatalogItem>  getCatalogInfo(@PathVariable("userId")  String userId) {
 
-       return Collections.singletonList(new MovieItems("Transformers","good",4));
+       return Collections.singletonList(new CatalogItem("Transformers","good",4));
    }
 }
